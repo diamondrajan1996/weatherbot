@@ -1,0 +1,23 @@
+intents:
+- get_weather
+- goodbye
+- greet
+entities:
+- GPE
+slots:
+  GPE:
+    type: text
+templates:
+  utter_greet:
+  - text: Hey!
+  - text: Hello
+  - text: Hiya!
+  utter_goodbye:
+  - text: Bye
+  - text: See Ya
+  - text: Till next time
+actions:
+- action_get_weather
+- actions.weather.ActionGetWeather
+- utter_goodbye
+- utter_greet
